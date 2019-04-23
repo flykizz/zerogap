@@ -1,7 +1,7 @@
 #项目API文档
 ## 表操作
 
-### 1 配置表 setting
+### 1 配置表 globle.setting
 
 #### 1_1 
     {
@@ -9,18 +9,23 @@
         type: 'thor'
         reqType: 'get',
         scope : 'zerogap',
-        path: 'setting.get',
+        path: 'globle.setting.get',
         version: '1.0',
         req: {
             param: {
                 page: 1,
                 pageSize: 20,
-
+                id: '',
+                type: '', //过滤类型
             }
         },
         res: {
             result: {
-                page
+                page: 1,
+                totalSize: 100,
+                datas: [{
+
+                }]
             }
         }
     }
