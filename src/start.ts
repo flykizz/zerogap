@@ -1,4 +1,4 @@
-import { route, pipe } from '@vdian/rocker-mvc';
+import { route, pipe } from '@vdian/rocker';
 import { start } from '@vdian/rocker-dao';
 import '@vdian/midlog';
 
