@@ -14,6 +14,7 @@
 16 统计表
 17 权限表
 18 用户表
+19 权限表
 
 
 项目所属结构
@@ -76,13 +77,14 @@
     status 仓库状态
 
 ### 4 项目表 projects（项目下可以用很多接口）
-    projects 
-    repositorieId 
+    projectId 项目Id
+    repositorieId 仓库Id
     gitlabAddr git项目地址
     homePageDaily 日常地址
     homePagePre 预发地址
     homePageProduct 生产地址
-    spiderA 页面spiderA
+    prd [] ?产品文档地址
+    spiderA ?页面spiderA
     scopes [] ? 项目会用到的thor请求scope （根据scope获取到接口列表，需要进行过滤）
     pageStreams ?[] 页面访问流程  画流程图，根据流程图去跳转
     publickParam ?[] 项目公共参数
@@ -148,6 +150,7 @@ rules scheme https://github.com/nuysoft/Mock/wiki
     pageId 页面Id
     components 组件Id
     spiders 页面埋点
+    
 
 ### 10 组件信息 （vms）（二期完成）
     componentId 组件Id
